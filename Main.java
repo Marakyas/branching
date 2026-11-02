@@ -8,8 +8,14 @@ public class Main {
 
         int roulette = random.nextInt(6) + 1;
 
-        if (roulette == 6) {
-            System.out.println("Там была пуля");
+        switch (roulette){
+            case 1,4,5:
+                System.out.println("Выпало " + roulette + ", повезло. Ты жив");
+                break;
+            case 2,3,6:
+                System.out.println("Выпало " + roulette + ", там была пуля. Ты 200");
         }
+
+
     }
 }
