@@ -7,5 +7,9 @@ public class Main {
         Random random = new Random();
 
         int roulette = random.nextInt(6) + 1;
+
+        if (roulette == 6) {
+            System.out.println("Там была пуля");
+        }
     }
 }
